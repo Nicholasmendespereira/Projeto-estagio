@@ -119,10 +119,90 @@ section h2{
 .conta p {
     color: #726E6D;
 }
+.container-subtitulo-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.icones-subtitulo {
+    display: flex;
+    flex-direction: row;
+}
+.download {
+    width: 120px;
+    height: 31px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    background-color:#ED7839;
+    border-radius: 6px;
+    position: relative;
+}
+.download img {
+    position: relative;
+    top: 6px;
+    left: 8px;
+}
+.download span {
+    position: relative;
+    top: 3px;
+    left: 15px;
+    
+}
+.estrela-icon {
+    background-color:  #ED7839;
+    width: 43px;
+    height: 31px;
+    border-radius: 6px;
+    margin-left: 10px;
+}
+.estrela-icon img{
+    position: relative;
+    top: 5px;
+    left: 11px;
+}
+.icon-dio {
+    background-color: #ED7839;
+    width: 43px;
+    height: 31px;
+    border-radius: 6px;
+    margin-left: 10px;
+}
+.escrita-abaixo-icons {
+    color: #ED7839;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    position: relative;
+    text-align: right;
+}
 #bem-vindo {
     position:relative;
     left: 120px;
 }
+.container-video {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: justify;
+    
+
+}
+.lado-do-video {
+    border: 1px solid rgba(0, 0, 0, 0.09);
+}
+.lado-do-video h2{
+    font-size: 20px;
+    background-color:#FDF1EB;
+    color: #958180;
+    font-family: 'Roboto', sans-serif;
+    font-weight:bolder;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+}
+
 /* ---------------------------------------------------------------------- */
 aside {
 
@@ -211,7 +291,31 @@ aside {
 .assunto-pergunta-01 p {
     font-weight: 400;
 }
+.tres-pontinhos {
+    padding-right: 5px;
+}
+.img-assunto  {
+    height: 30px;
+    width: 40px;
+    background-color: #F1833F;
+  }
+.img-assunto img {
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+.container-icons-assunto {
+    padding: 10px 10px 0px 10px;
+    display: flex;
+    flex-direction: row;
+}
+.container-icons-assunto p {
+    color: #757575;
+    padding: 0px 10px 0px 10px;
+}
 .assunto-pergunta-02  {
+    margin-top: 30px;
+    padding-top:10px;
     font-family: 'Quicksand', sans-serif;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.227);
 
