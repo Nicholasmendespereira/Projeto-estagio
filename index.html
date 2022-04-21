@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container-pagina">
-        <!-- INICIO DE MENU DE NAVAEGAÇÃO ENTRE AS PÁGINAS -->
+        <!-- INICIO DE MENU DE NAVEGAÇÃO ENTRE AS PÁGINAS -->
         <header>
                 <div class="titulo-logo">
                     <h1>SLACA 2019</h1>
@@ -26,8 +26,8 @@
                     <li><a href="#">Contato</a></li>
                 </ul>
             </nav>
-        <!-- FIM DO MENU DE NAVAEGAÇÃO ENTRE AS PÁGINAS -->
         </header>
+        <!-- FIM DO MENU DE NAVAEGAÇÃO ENTRE AS PÁGINAS -->
         <main>
         
         <section>
@@ -38,6 +38,7 @@
                     <p id="principal">Anais do 13° Simpósio Latino Americano de Ciência de Alimentos</p>
                     <p>ISSN: 1234-5678</p>
                 </div>
+
                 <div class="linguagem">
                     <input list="linguagem" placeholder="PT,BR">
                     <datalist id="linguagem" >
@@ -45,6 +46,7 @@
                         <option value="EN-EUA">EN-EUA</option>
                     </datalist>
                 </div>
+
                 <div class="conta">
                     <p id="bem-vindo">Bem vindo!</p>
                     <P>alguem12@galoascience.com</P>
@@ -53,7 +55,7 @@
             </div>
 
                 <div class="container-subtitulo-principal">
-                    <div>
+                    <div class="subtitulo-principal">
                         <h2>Análise sensorial de preparações funcionais desenvolvidas para escolares</h2>
                         <h2>entre 09 e 15 anos, do município de campinas/SP</h2>
                     </div>
@@ -86,6 +88,8 @@
                     <p>Tipo de Apresentação: <strong>Póster</strong></p>
                     <p>Eixo temático: <strong>Alimentação e saúde(AS)</strong></p>
                     <p>Plavras-chaves: <strong>Alimentos funcionais, alimentação escolar.</strong></p>
+                    
+                    <br>
                     <p><strong>Autores:</strong></p>
                     <p>Galileo Galilei</p>
                     <p>Berta Lange de Morretes</p>
@@ -106,7 +110,18 @@
         <aside>
             <div class="resumo">
                 <h2>Resumo</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia a obcaecati quia tempora consectetur esse rem recusandae at ab! Sint beatae minima eos ad sed accusantium vero quia maiores esse?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit sapiente ducimus facilis voluptatibus doloremque necessitatibus veniam rem cumque, qui, in quas enim commodi explicabo amet nobis libero voluptate itaque eos!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia a obcaecati quia tempora consectetur esse rem recusandae at ab! Sint beatae minima eos ad sed accusantium vero quia maiores esse?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit sapiente ducimus facilis voluptatibus doloremque necessitatibus veniam rem cumque, qui, in quas enim commodi explicabo amet nobis libero voluptate itaque eos!<span id="pontos">...</span> <div id="mais"> 
+
+                    <p>Fusce vitae luctus dui. Donec id euismod mauris, in volutpat urna. Proin dapibus consequat feugiat. Proin dictum justo arcu, quis vestibulum augue lacinia quis. Sed dignissim dui nulla, ut faucibus mauris sodales id. Aliquam erat volutpat. Maecenas dolor enim, tincidunt id elit non, suscipit interdum turpis. Etiam finibus urna libero, eget interdum eros volutpat ullamcorper. Pellentesque et pretium lorem. Aenean interdum quis diam ac porttitor. Cras nec ipsum pulvinar, pharetra libero non, ornare enim. Etiam in laoreet odio.</p>
+                    
+                    <p>Nam eget tristique elit, at fermentum tellus. Mauris scelerisque ligula id eleifend feugiat. Donec eleifend vehicula sem nec dapibus. Integer scelerisque neque dui, in lacinia erat molestie eu. Phasellus maximus dui eget lacus porta tempor. Ut ex nibh, dignissim quis purus semper, efficitur facilisis turpis. Praesent blandit elementum ultricies. Aliquam sit amet enim sit amet nulla pulvinar lobortis consectetur non odio. Phasellus at lacus hendrerit, vulputate nisi sit amet, viverra mauris. Etiam eu scelerisque orci. Quisque sagittis, mi vitae pharetra iaculis, orci elit eleifend massa, eu posuere mauris odio id odio. Morbi eu libero luctus, consectetur lorem vel, interdum sapien. Aenean in porta arcu. Maecenas eu maximus massa.</p>
+                    
+                    <p>Praesent velit dolor, dignissim sed quam ac, efficitur porta justo. Pellentesque porta pharetra felis ut hendrerit. Nulla facilisi. Aliquam erat volutpat. Nunc sit amet faucibus quam. Maecenas dapibus luctus dolor at viverra. Duis nec fringilla libero. Duis risus nibh, viverra ac orci nec, iaculis dictum sem. Aliquam at malesuada arcu. Aliquam erat volutpat. Donec varius ipsum purus, ut vehicula purus placerat vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> </div> 
+                    <button id="btnLeiaMais" onclick="LeiaMais()">Leia Mais</button>
+                    <!-- <input type="button" value="Leia Mais" id="btnLeiaMais" onclick="LeiaMais()">
+                    -->
+                   
+                </p>
             </div>
             <div class="discussoes">
                 <h2>Discussões</h2>
@@ -152,9 +167,11 @@
                 <input type="button" value="Saiba Mais">
             </div>
             <div class="footer-div-02">
-                <p><strong>Preservar a memória do evento e ampliar o acesso ao conhecimento científico</strong>gerado em eventos é a razão de ser da plataforma Galoá Proceedings.</p>
+                <p><strong>Preservar a memória do evento e ampliar o acesso ao conhecimento científico</strong> gerado em eventos é a razão de ser da plataforma Galoá Proceedings.</p>
+                <br>
                 <p>Os trabalhos publicados aqui têm maior alcance e ficam disponíveis para toda a comunidade científica, mantendo acesso o debate ciéntifico fomentado pelos encontros e aumentando o impacto do evento.</p>
             </div>
         </footer>
+        <script src="JavaScript.js"></script>
 </body>
 </html>
