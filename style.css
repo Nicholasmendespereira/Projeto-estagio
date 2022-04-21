@@ -319,12 +319,37 @@ aside {
     border: 0px solid black;
     background-image: linear-gradient(to bottom, #feb464d8,#f4852b );
 }
+#feedback-editar {
+    display: none;
+}
+#icon-certinho {
+    position:relative;
+    left: 563px;
+}
+#feedback  {
+    color: #707070;
+    cursor:auto;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+#feedback-editar .editar  {
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    color: #ED7839;
+    
+}
 .container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
 }
+.container input{
+    cursor: pointer;
+}
+    
 .tracinhos-01 {
     height: 6px;
     width: 30px;
@@ -340,6 +365,56 @@ aside {
     position: relative;
     top: 12px;
     right: 186px;
+}
+.formulario {
+    display: none;
+}
+.mb-3 label {
+    font-family:'Roboto', sans-serif; 
+    font-weight: 700;
+    font-size: 16px;
+    color:#ED7839;
+    position: relative;
+    bottom: 40px;
+    left: 60px;
+    
+}
+.mb-3  input {
+    width: 70%;
+    height: 50px;
+    border: 1px solid #CCCCCC;
+}
+#label-textarea {
+    position: relative;
+    bottom: 120px;
+    left: 60px;
+    
+}
+.mb-3 textarea {
+    height: 113px;
+    width: 70%;
+    position: relative;
+    right: 10px;
+    border: 1px solid #CCCCCC;
+}
+.div-button-enviar {
+    background-color: #CCCCCC;
+    border: 1px solid #CCCCCC;
+    width: 60%;
+    position: relative;
+    left: 63px;
+}
+.div-button-enviar button {
+    position: relative;
+    left: 640px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    border: 0px solid rgba(0, 0, 0, 0);
+    color: white;
+    height: 31px;
+    width: 205.1px;
+    background-image: linear-gradient(to bottom,  #FEB154, #F1833E);
 }
 
 .assunto-pergunta-01  {
@@ -588,6 +663,65 @@ footer {
         position: relative;
         right: 157px;
     }
+    .formulario {
+        display: none;
+        position: relative;
+        top: 15px;
+        right: 310px;
+       
+    }
+    .mb-3 label {
+        font-family:'Roboto', sans-serif; 
+        font-weight: 700;
+        font-size: 16px;
+        color:#ED7839;
+        position: relative;
+        bottom: 40px;
+        left: 60px;
+        
+    }
+    .mb-3  input {
+        width: 400px;
+        height: 50px;
+        border: 1px solid #CCCCCC;
+    }
+    #label-textarea {
+        position: relative;
+        bottom: 120px;
+        left: 60px;
+        
+    }
+    .mb-3 textarea {
+        height: 113px;
+        width: 400px;
+        position: relative;
+        right: 10px;
+        border: 1px solid #CCCCCC;
+    }
+    .div-button-enviar {
+        background-color: #CCCCCC;
+        border: 1px solid #CCCCCC;
+        width: 300px;
+        position: relative;
+        left: 63px;
+    }
+    .div-button-enviar button {
+        position: relative;
+        left: 195px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        border: 0px solid rgba(0, 0, 0, 0);
+        color: white;
+        height: 31px;
+        width: 205.1px;
+        background-image: linear-gradient(to bottom,  #FEB154, #F1833E);
+    }
+    #icon-certinho {
+        position: relative;
+        left: 175px;
+    }
+
     .assunto-pergunta-01 {
         position: relative;
         top: 15px;

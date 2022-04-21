@@ -126,13 +126,51 @@
             <div class="discussoes">
                 <h2>Discussões</h2>
                 <p id="paragrafo-destaque">Compartilhe suas ideias ou dúvidas com os autores!</p>
-                <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus</p> <p>questionamentos ou sugestões para o autor!</p>
+                <p id="subparagrafo">Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus</p> <p id="questionamentos">questionamentos ou sugestões para o autor!</p>
                 <div class="container">
-                    <input type="button" value="criar tópico">
+                    <input type="button" value="criar tópico" id="btnCriarTopico" onclick="criarTopico()">
                     <div class="tracinhos-01">.</div>
                     <div class="tracinhos-02">.</div>
                 </div>
+                <br><br>
+                <div id="feedback-editar">
+                    <div id="icon-certinho"><img src="IMAGENS/trabalho-feito-icon.png" alt="icon-certinho"></div>
+                    <p id="feedback">
+                        Aguardando feedback dos autores
+                    </p>
+                    <p class="editar">
+                        Editar tópico
+                    </p>
+
+                </div>
             </div>
+
+<!-- --------------------------------------------------- -->
+<!-- inicio formulário -->
+            <div class="formulario" id="formulario">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">
+                        Assunto
+                    </label>
+                
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Defina um tópico sucinto para notificar os autores...">
+                  </div>
+                  <br><br><br>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label" id="label-textarea">
+                        Conteúdo
+                    </label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">
+                    </textarea>
+                  </div>
+                  <div class="div-button-enviar">
+                      <button id="buttonenviar" onclick="enviarResposta()">ENVIAR</button>
+                
+                  </div>
+            </div>
+
+<!-- fim formulario -->
+<!-- ------------------------------------------------------- -->
             <div class="assunto-pergunta-01">
                 <h2>Assunto da pergunta aparece aqui</h2>
                 <h3>Carlos Henrique Santos</h3>
