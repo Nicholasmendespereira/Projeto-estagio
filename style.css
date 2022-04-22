@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Cinzel:wght@800&family=Quicksand:wght@300;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
+
+
 * {
     padding: 0px;
     margin: 0px;
@@ -11,28 +13,33 @@
 .container-pagina {
     display: flex;
     flex-direction: row;
+    flex-grow: 1, 2;
 }
+
 /* ---------------------------------------------------------------------- */
 /* inicio estilo do menu navegação */
 header {
+    position:fixed;
     box-shadow: 0.5px 0.5px 8px rgba(0, 0, 0, 0.329);
     height: 100vh;
-    max-width: 220px;
+    width: 250px;
 }
 header h1 {
     
     color: white;
     position: relative;
-    top: 12px;
-    left: 15px;
+    top: 15px;
+    left: 25px;
     font-family:'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
 }
 header img {
-    width: 11vw;
+    width: 14vw;
 }
 .titulo-logo {
     background-image: linear-gradient(to bottom, #feb464bf,#f4852b );
-    width: 220px;
+    width: 100%;
     height: 68px;
 }
 ul {
@@ -42,7 +49,7 @@ ul {
 
 ul li {
     border-bottom: solid 3px rgba(0, 0, 0, 0.147);
-    margin-bottom: 8px;
+    margin: 10px 10px 15px 0px;
     font-family: 'Quicksand', sans-serif;
     height: 3vh;
     
@@ -52,18 +59,22 @@ ul li {
     text-decoration: none;
     color: #725C5C;
     font-size: 22px;
-    padding: 15px;
-}
+}    
+    
  li a:hover {
     border-left: 8px solid #f4852b;
     background-color: #FDF1EB;
-    width: ;
+
 }
 /* fim  estilo do menu navegação */
 /* ---------------------------------------------------------------------- */
 /* inicio  estilo do conteudo principal */
 main {
-    padding: 30px;
+    /* padding: 30px; */
+    width: 1350px;
+    position: relative;
+    left: 230px;
+    margin: 30px;
 }
 /* fim  estilo do conteudo principal */
 /* ---------------------------------------------------------------------- */
@@ -95,6 +106,11 @@ section h2{
     font-weight:bolder;
 
 }
+.linguagem {
+    position: relative;
+    top: 20px;
+    right: 2%;
+}
 .linguagem ::placeholder {
     font-size: 20px;
     position: relative;
@@ -109,6 +125,12 @@ section h2{
     background-repeat: no-repeat;
     background-position: 8px;
 }
+.conta {
+    position: relative;
+    top: 20px;
+    right: 45px;
+
+}
 .conta img {
     border-radius: 50px;
     position: relative;
@@ -119,10 +141,109 @@ section h2{
 .conta p {
     color: #726E6D;
 }
+.container-subtitulo-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.subtitulo-principal h2 {
+    position: relative;
+    left:70px ;
+    font-weight:900;
+    font-family: 'Roboto', sans-serif;
+}
+.icones-subtitulo {
+    cursor: pointer;
+    position: relative;
+    top: 10px;
+    right: 60px;
+    display: flex;
+    flex-direction: row;   
+}
+.download {
+    width: 120px;
+    height: 31px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    background-color:#ED7839;
+    border-radius: 6px;
+    position: relative;
+}
+.download img {
+    position: relative;
+    top: 6px;
+    left: 8px;
+}
+.download span {
+    position: relative;
+    top: 3px;
+    left: 15px;
+    
+}
+.estrela-icon {
+    background-color:  #ED7839;
+    width: 43px;
+    height: 31px;
+    border-radius: 6px;
+    margin-left: 10px;
+}
+.estrela-icon img{
+    position: relative;
+    top: 5px;
+    left: 11px;
+}
+.icon-dio {
+    background-color: #ED7839;
+    width: 43px;
+    height: 31px;
+    border-radius: 6px;
+    margin-left: 10px;
+}
+.escrita-abaixo-icons {
+    color: #ED7839;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    position: relative;
+    bottom: 5px;
+    right: 55px;
+    text-align: right;
+}
 #bem-vindo {
     position:relative;
     left: 120px;
 }
+.container-video {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: justify;
+}
+.lado-do-video {
+    border: 1px solid rgba(0, 0, 0, 0.09);
+}
+.lado-do-video p {
+    font-weight: 400;
+    line-height: 14.4px;
+    padding: 4px 0px 0px 10px;
+}
+.lado-do-video h2{
+    font-size: 20px;
+    background-color:#FDF1EB;
+    color: #958180;
+    font-family: 'Roboto', sans-serif;
+    font-weight:bolder;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    
+    
+    
+    
+}
+
 /* ---------------------------------------------------------------------- */
 aside {
 
@@ -136,10 +257,32 @@ aside {
     color: #4E4E4E;
     padding: 12px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.114);
-
+}
+.resumo p {
+    padding: 15px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color:#5C5C5C;
+    line-height: 22.75px;
+    text-align: justify;
+}
+.resumo strong {
+    color: #ED7839;
+}
+#btnLeiaMais {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    padding-left: 15px;
+    color:#ED7839;
+    border: 0px solid rgba(0, 0, 0, 0);
+}
+#mais {
+    display:none;
 }
 .discussoes {
     border: 2px solid rgba(0, 0, 0, 0.114);
+    margin: 30px 0px 30px 0px;
 }
 .discussoes h2{
     background-color: #FDF1EB;
@@ -160,13 +303,53 @@ aside {
     font-family:'Roboto', sans-serif;
     font-weight: normal;
     text-align: center;
+    padding: 10px;
+    
+}
+.discussoes input {
+    text-align: end;
+    padding: 15px;
+    width: 180px;
+    height: 33;
+    color: white;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    border-radius: 8px;
+    border: 0px solid black;
+    background-image: linear-gradient(to bottom, #feb464d8,#f4852b );
+}
+#feedback-editar {
+    display: none;
+}
+#icon-certinho {
+    position:relative;
+    left: 563px;
+}
+#feedback  {
+    color: #707070;
+    cursor:auto;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+#feedback-editar .editar  {
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    color: #ED7839;
+    
 }
 .container {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
 }
+.container input{
+    cursor: pointer;
+}
+    
 .tracinhos-01 {
     height: 6px;
     width: 30px;
@@ -183,22 +366,61 @@ aside {
     top: 12px;
     right: 186px;
 }
-.discussoes input {
-    text-align: end;
-    padding: 15px;
-    width: 180px;
-    height: 33;
-    color: white;
-    font-size: 20px;
+.formulario {
+    display: none;
+}
+.mb-3 label {
+    font-family:'Roboto', sans-serif; 
+    font-weight: 700;
+    font-size: 16px;
+    color:#ED7839;
+    position: relative;
+    bottom: 40px;
+    left: 60px;
+    
+}
+.mb-3  input {
+    width: 70%;
+    height: 50px;
+    border: 1px solid #CCCCCC;
+}
+#label-textarea {
+    position: relative;
+    bottom: 120px;
+    left: 60px;
+    
+}
+.mb-3 textarea {
+    height: 113px;
+    width: 70%;
+    position: relative;
+    right: 10px;
+    border: 1px solid #CCCCCC;
+}
+.div-button-enviar {
+    background-color: #CCCCCC;
+    border: 1px solid #CCCCCC;
+    width: 60%;
+    position: relative;
+    left: 63px;
+}
+.div-button-enviar button {
+    position: relative;
+    left: 640px;
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
-    border-radius: 8px;
-    border: 0px solid black;
-    background-image: linear-gradient(to bottom, #feb464d8,#f4852b );
+    font-size: 15px;
+    border: 0px solid rgba(0, 0, 0, 0);
+    color: white;
+    height: 31px;
+    width: 205.1px;
+    background-image: linear-gradient(to bottom,  #FEB154, #F1833E);
 }
+
 .assunto-pergunta-01  {
     font-family: 'Quicksand', sans-serif;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.227);
+    padding: 30px;
 
 }
 .assunto-pergunta-01 h2 {
@@ -211,7 +433,31 @@ aside {
 .assunto-pergunta-01 p {
     font-weight: 400;
 }
+.tres-pontinhos {
+    padding-right: 5px;
+}
+.img-assunto  {
+    height: 30px;
+    width: 40px;
+    background-color: #F1833F;
+  }
+.img-assunto img {
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+.container-icons-assunto {
+    padding: 10px 10px 0px 10px;
+    display: flex;
+    flex-direction: row;
+}
+.container-icons-assunto p {
+    color: #757575;
+    padding: 0px 10px 0px 10px;
+}
 .assunto-pergunta-02  {
+    margin-top: 30px;
+    padding: 30px;
     font-family: 'Quicksand', sans-serif;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.227);
 
@@ -230,8 +476,14 @@ aside {
 /* ---------------------------------------------------------------------- */
 /* inicio do estilo do footer */
 footer {
+    position: relative;
+    left: 100px;
     display: flex;
     flex-direction: row;
+    width: 950px;
+    margin: auto;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
 }
 .footer-div {
     display: flex;
@@ -245,6 +497,7 @@ footer {
     background-color: #71478E;
     width: 15vw;
     height: 40px;
+    cursor: pointer;
     
     color: white;
     font-size: 20px;
@@ -259,3 +512,251 @@ footer {
 }
 /* fim do estilo do footer */
 /* ---------------------------------------------------------------------- */
+
+@media (max-width:510px ) {
+    .container-pagina {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        justify-items: center;
+    } 
+    header {
+        position:relative;
+        box-shadow: 0.5px 0.5px 8px rgba(0, 0, 0, 0.329);
+        height: 100vh;
+        width: 100vw;
+    }
+    .titulo-logo {
+        text-align: center;
+        background-image: linear-gradient(to bottom, #feb464bf,#f4852b );
+        width: 100%;
+        height: 68px;
+    }
+    .logo-header img {
+        width: 60vw;
+        position: relative;
+        left: 20%;
+    }
+    ul {
+        position: relative;
+        top: 80px;
+        padding: 10px; 
+        
+        
+     }
+     
+     ul li {
+         border-bottom: solid 3px rgba(0, 0, 0, 0.147);
+         margin: 10px 10px 15px 0px;
+         font-family: 'Quicksand', sans-serif;
+         padding: 25px 0px;
+         
+         
+    }
+     
+      li a {
+         text-decoration: none;
+         color: #725C5C;
+         font-size: 22px;
+         height: 50vh;
+         
+     }    
+         
+      li a:hover {
+         border-left: 2px solid #f4852b;
+         background-color: #FDF1EB;
+     
+     }
+     main {
+         position: relative;
+         top: 350px;
+     }
+    .container-section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 425px;
+        position: relative;
+        top: 80px;
+        right: 250px;
+    }
+    .titulo-section {
+        padding: 8px;
+    }
+    .titulo-section p {
+        font-size: 15px;
+    }
+    .linguagem {
+        
+    }
+    .conta {
+        position: relative;
+        left: 100px;
+        bottom: 30px;
+    }
+    .container-subtitulo-principal {
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 400px;
+        justify-items: center;
+    }
+    .subtitulo-principal  {
+        position: relative;
+        right: 380px;
+        padding: 10px;    
+    }
+    .subtitulo-principal h2 {
+        
+        position: relative;
+        right: 530px;
+    }
+    
+    .icones-subtitulo {
+        width: 400px;
+        position: relative;
+        right: 300px;        
+        top: 40px;
+        cursor: pointer;
+    }
+   
+    .escrita-abaixo-icons {
+        width: 400px;
+        position: relative;
+        right: 420px;
+    }
+    .container-video {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: 250px;
+        width: 400px;
+    }
+    .lado-do-video h2 {
+        height: 35px ;
+        padding: 5px;
+    }
+    .resumo {
+        position: relative;
+        top: 20px;
+        right: 250px;
+        width: 400px;
+
+    }
+    .discussoes {
+        position: relative;
+        top: 15px;
+        right: 250px;
+        width: 400px;
+    }
+    .discussoes input {
+        position: relative;
+        left: 30px;
+    }
+    .tracinhos-01 {
+        position: relative;
+        right: 140px;
+    }
+    .tracinhos-02 {
+        position: relative;
+        right: 157px;
+    }
+    .formulario {
+        display: none;
+        position: relative;
+        top: 15px;
+        right: 310px;
+       
+    }
+    .mb-3 label {
+        font-family:'Roboto', sans-serif; 
+        font-weight: 700;
+        font-size: 16px;
+        color:#ED7839;
+        position: relative;
+        bottom: 40px;
+        left: 60px;
+        
+    }
+    .mb-3  input {
+        width: 400px;
+        height: 50px;
+        border: 1px solid #CCCCCC;
+    }
+    #label-textarea {
+        position: relative;
+        bottom: 120px;
+        left: 60px;
+        
+    }
+    .mb-3 textarea {
+        height: 113px;
+        width: 400px;
+        position: relative;
+        right: 10px;
+        border: 1px solid #CCCCCC;
+    }
+    .div-button-enviar {
+        background-color: #CCCCCC;
+        border: 1px solid #CCCCCC;
+        width: 300px;
+        position: relative;
+        left: 63px;
+    }
+    .div-button-enviar button {
+        position: relative;
+        left: 195px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        border: 0px solid rgba(0, 0, 0, 0);
+        color: white;
+        height: 31px;
+        width: 205.1px;
+        background-image: linear-gradient(to bottom,  #FEB154, #F1833E);
+    }
+    #icon-certinho {
+        position: relative;
+        left: 175px;
+    }
+
+    .assunto-pergunta-01 {
+        position: relative;
+        top: 15px;
+        right: 250px;
+        width: 400px;
+    }
+    .assunto-pergunta-02 {
+        position: relative;
+        top: 15px;
+        right: 250px;
+        width: 400px;
+    }
+    footer {
+        position:relative ;
+        top: 400px;
+        
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        
+    }
+    .footer-div img {
+        position: relative;
+        right: 60px;
+        width: 300px;
+    }
+    .footer-div input {
+        position: relative;
+        right: 60px;
+        width: 300px;
+    }
+    .footer-div-02 p {
+        position: relative;
+        right: 60px;
+        text-align:left;
+    }
+    }
+    /* ------------------------------------ */
