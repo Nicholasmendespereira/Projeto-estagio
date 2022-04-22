@@ -1,1 +1,0 @@
-Neste Projeto, realizo a desafio proposto no processo Seletivo;
