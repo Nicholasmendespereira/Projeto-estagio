@@ -10,6 +10,9 @@
     margin: 0px;
     box-sizing: border-box;
 }
+body {
+    
+}
 .container-pagina {
     display: flex;
     flex-direction: row;
@@ -74,7 +77,7 @@ main {
     width: 1350px;
     position: relative;
     left: 230px;
-    margin: 30px;
+    margin-left: 30px;
 }
 /* fim  estilo do conteudo principal */
 /* ---------------------------------------------------------------------- */
@@ -238,10 +241,10 @@ section h2{
     font-family: 'Roboto', sans-serif;
     font-weight:bolder;
     border: 1px solid rgba(0, 0, 0, 0.09);
-    
-    
-    
-    
+}
+.video {
+    margin: 0 auto;
+    width: 35vw;
 }
 
 /* ---------------------------------------------------------------------- */
@@ -250,6 +253,7 @@ aside {
 }
 .resumo {
     border: 2px solid rgba(0, 0, 0, 0.114);
+    margin-top: 3%;
 }
 .resumo h2 {
     background-color: #FDF1EB;
@@ -476,12 +480,10 @@ aside {
 /* ---------------------------------------------------------------------- */
 /* inicio do estilo do footer */
 footer {
-    position: relative;
-    left: 100px;
     display: flex;
     flex-direction: row;
     width: 950px;
-    margin: auto;
+    margin-left: auto;
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
 }
@@ -568,8 +570,7 @@ footer {
      
      }
      main {
-         position: relative;
-         top: 350px;
+        
      }
     .container-section {
         display: flex;
@@ -631,12 +632,17 @@ footer {
         display: flex;
         flex-direction: column;
         position: relative;
-        right: 250px;
+        right: 18.5%;
         width: 400px;
     }
     .lado-do-video h2 {
         height: 35px ;
         padding: 5px;
+    }
+    .video {
+        width: 100vw; 
+        height: 50vh; 
+        padding: 1em 0 5em 0;
     }
     .resumo {
         position: relative;
@@ -735,12 +741,10 @@ footer {
         width: 400px;
     }
     footer {
-        position:relative ;
-        top: 400px;
-        
         display: flex;
         flex-direction: column;
         width: 400px;
+        margin-left: 17%;
         
     }
     .footer-div img {
